@@ -1,0 +1,12 @@
+version: "3.7"
+services:
+  db:
+    image: "postgres:13"
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./pgdata:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_USER=bektexno_user
+      - POSTGRES_PASSWORD=4200215aaAA!!
+      - POSTGRES_DB=bektexno_db

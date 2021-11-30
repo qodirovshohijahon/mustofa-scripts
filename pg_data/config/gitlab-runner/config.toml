@@ -1,0 +1,16 @@
+concurrent = 1
+check_interval = 0
+
+[session_server]
+  session_timeout = 1800
+
+[[runners]]
+  name = "877408c274a9"
+  url = "https://gitlab.com"
+  token = "ymbsBH3dKLbyjk5wg2ZJ"
+  executor = "shell"
+  [runners.custom_build_dir]
+  [runners.cache]
+    [runners.cache.s3]
+    [runners.cache.gcs]
+    [runners.cache.azure]
